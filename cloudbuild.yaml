@@ -1,7 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/psychic-timing-360520/github.com/agebre32/harmonic-percussive-project:b6ca0c9e129aea8b6702b67ed5602e084baa4b7e
-', '.']
-  - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', '-t', 'gcr.io/psychic-timing-360520/github.com/agebre32/harmonic-percussive-project:b6ca0c9e129aea8b6702b67ed5602e084baa4b7e
-']
+  args: ['build', '-t', 'gcr.io/psychic-timing-360520/github.com/agebre32/harmonic-percussive-project:b6ca0c9e129aea8b6702b67ed5602e084baa4b7e', '.']
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['push', '-t', 'gcr.io/psychic-timing-360520/github.com/agebre32/harmonic-percussive-project:b6ca0c9e129aea8b6702b67ed5602e084baa4b7e']
