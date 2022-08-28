@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/psychic-timing-360520/myimage', '.']
+  args: ['build', '-t', 'gcr.io/psychic-timing-360520/4be72ca80cd3', '.']
   - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/psychic-timing-360520/myimage', '.']
+  args: ['push', 'gcr.io/psychic-timing-360520/4be72ca80cd3', '.']
