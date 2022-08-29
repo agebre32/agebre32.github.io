@@ -7,3 +7,9 @@ steps:
         'gcr.io/psychic-timing-360520/harmonic-percussive-project:$SHORT_SHA',
         '.',
       ]
+   - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'push',
+        'gcr.io/psychic-timing-360520/harmonic-percussive-project:$SHORT_SHA',
+      ]
