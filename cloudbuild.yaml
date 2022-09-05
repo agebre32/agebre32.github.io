@@ -14,7 +14,9 @@ steps:
   args: 
       [
         'build',
+        '-t',
         'gcr.io/psychic-timing-360520/harmonic-percussive-project:$SHORT_SHA',
+        '.',
       ]
  - name: 'gcr.io/cloud-builders/gcloud'
    args:
