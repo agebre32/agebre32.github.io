@@ -6,17 +6,17 @@ steps:
   entrypoint: npm
   args:
       [
-        'run',
+        'build',
+        '-t',
         'gcr.io/psychic-timing-360520/harmonic-percussive-project:$SHORT_SHA',
+        '.',
       ]
 - name: node
   entrypoint: npm
   args: 
       [
-        'build',
-        '-t',
+        'push',
         'gcr.io/psychic-timing-360520/harmonic-percussive-project:$SHORT_SHA',
-        '.',
       ]
  - name: 'gcr.io/cloud-builders/gcloud'
    args:
